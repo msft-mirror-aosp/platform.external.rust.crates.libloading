@@ -1,0 +1,19 @@
+name: "libloading"
+description: "A safer binding to platform\'s dynamic library loading utilities."
+third_party {
+  url {
+    type: HOMEPAGE
+    value: "https://crates.io/crates/libloading"
+  }
+  url {
+    type: GIT
+    value: "https://github.com/nagisa/rust_libloading"
+  }
+  version: "0.6.1"
+  license_type: NOTICE
+  last_upgrade_date {
+    year: 2020
+    month: 4
+    day: 16
+  }
+}
