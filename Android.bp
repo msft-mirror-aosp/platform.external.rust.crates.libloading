@@ -8,8 +8,14 @@ rust_library_host {
     flags: [
         "--cfg mtsafe_dlerror",
     ],
+    rustlibs: [
+        "libcfg_if",
+    ],
     // TODO: Cannot use libdl on Android host?
     // shared_libs: [
     //     "libdl",
     // ],
 }
+
+// dependent_library ["feature_list"]
+//   cfg-if-0.1.10
