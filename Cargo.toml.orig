@@ -1,13 +1,18 @@
 [package]
 name = "libloading"
-version = "0.6.2"
+# When bumping
+# * Don’t forget to add an entry to `src/changelog.rs`
+# * If bumping a incompatible version, adjust documentation in `src/lib.rs`
+version = "0.6.3"
 authors = ["Simonas Kazlauskas <libloading@kazlauskas.me>"]
-build = "build.rs"
-description = "A safer binding to platform’s dynamic library loading utilities"
-keywords = ["dlopen", "load", "shared", "dylib"]
 license = "ISC"
 repository = "https://github.com/nagisa/rust_libloading/"
 documentation = "https://docs.rs/libloading/"
+readme = "README.mkd"
+description = "A safer binding to platform’s dynamic library loading utilities"
+keywords = ["dlopen", "load", "shared", "dylib"]
+categories = ["api-bindings"]
+build = "build.rs"
 
 [target.'cfg(windows)'.dependencies.winapi]
 version = "0.3"
@@ -16,3 +21,14 @@ features = [
     "errhandlingapi",
     "libloaderapi",
 ]
+
+[target.'cfg(unix)'.dependencies.cfg-if]
+version = "0.1"
+
+[dev-dependencies]
+libc = "0.2"
+static_assertions = "1.1"
+
+[package.metadata.docs.rs]
+all-features = true
+rustdoc-args = ["--cfg", "docsrs"]
