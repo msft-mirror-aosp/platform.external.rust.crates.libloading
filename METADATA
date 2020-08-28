@@ -6,8 +6,8 @@ third_party {
     value: "https://crates.io/crates/libloading"
   }
   url {
-    type: GIT
-    value: "https://github.com/nagisa/rust_libloading"
+    type: ARCHIVE
+    value: "https://static.crates.io/crates/libloading/libloading-0.6.3.crate"
   }
   version: "0.6.3"
   license_type: NOTICE
