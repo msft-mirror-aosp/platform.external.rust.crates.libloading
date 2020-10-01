@@ -6,14 +6,14 @@ third_party {
     value: "https://crates.io/crates/libloading"
   }
   url {
-    type: GIT
-    value: "https://github.com/nagisa/rust_libloading"
+    type: ARCHIVE
+    value: "https://static.crates.io/crates/libloading/libloading-0.6.3.crate"
   }
-  version: "0.6.2"
+  version: "0.6.3"
   license_type: NOTICE
   last_upgrade_date {
     year: 2020
-    month: 5
-    day: 5
+    month: 8
+    day: 24
   }
 }
