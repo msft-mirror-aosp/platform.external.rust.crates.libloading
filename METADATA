@@ -1,5 +1,5 @@
 name: "libloading"
-description: "A safer binding to platform\'s dynamic library loading utilities."
+description: "A safer binding to platform\'s dynamic library loading utilities"
 third_party {
   url {
     type: HOMEPAGE
