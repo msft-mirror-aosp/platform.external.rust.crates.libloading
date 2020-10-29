@@ -5,17 +5,10 @@ rust_library_host {
     crate_name: "libloading",
     srcs: ["src/lib.rs"],
     edition: "2015",
-    flags: [
-        "--cfg mtsafe_dlerror",
-    ],
     rustlibs: [
         "libcfg_if",
     ],
-    // TODO: Cannot use libdl on Android host?
-    // shared_libs: [
-    //     "libdl",
-    // ],
 }
 
 // dependent_library ["feature_list"]
-//   cfg-if-0.1.10
+//   cfg-if-1.0.0
