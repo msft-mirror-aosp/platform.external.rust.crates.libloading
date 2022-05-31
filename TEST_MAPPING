@@ -11,7 +11,21 @@
       "path": "external/rust/crates/vulkano"
     }
   ],
+  "postsubmit": [
+    {
+      "name": "keystore2_legacy_blobs_test"
+    },
+    {
+      "name": "keystore2_test"
+    },
+    {
+      "name": "legacykeystore_test"
+    }
+  ],
   "presubmit": [
+    {
+      "name": "keystore2_legacy_blobs_test"
+    },
     {
       "name": "keystore2_test"
     },
@@ -20,6 +34,9 @@
     }
   ],
   "presubmit-rust": [
+    {
+      "name": "keystore2_legacy_blobs_test"
+    },
     {
       "name": "keystore2_test"
     },
