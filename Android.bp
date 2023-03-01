@@ -33,4 +33,5 @@ rust_library {
         "//apex_available:platform",
         "com.android.virt",
     ],
+    vendor_available: true,
 }
