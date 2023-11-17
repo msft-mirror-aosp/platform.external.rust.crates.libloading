@@ -5,6 +5,5 @@
   ],
   "dependencies": true,
   "device": true,
-  "run": true,
-  "vendor_available": true
+  "run": true
 }
