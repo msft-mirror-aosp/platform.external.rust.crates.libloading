@@ -8,13 +8,13 @@ third_party {
   license_type: NOTICE
   last_upgrade_date {
     year: 2024
-    month: 2
-    day: 2
+    month: 5
+    day: 9
   }
   homepage: "https://crates.io/crates/libloading"
   identifier {
     type: "Archive"
-    value: "https://static.crates.io/crates/libloading/libloading-0.8.1.crate"
-    version: "0.8.1"
+    value: "https://static.crates.io/crates/libloading/libloading-0.8.3.crate"
+    version: "0.8.3"
   }
 }
